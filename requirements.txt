@@ -1,0 +1,4 @@
+streamlit
+pandas
+browser-use
+python-dotenv

@@ -1,0 +1,169 @@
+(venv) PS C:\Users\MARWAN\Downloads\offerings_scraper> python scraper.py
+INFO     [browser_use] BrowserUse logging setup complete with level info
+INFO     [root] Anonymized telemetry enabled. See https://docs.browser-use.com/development/telemetry for more information.
+C:\Users\MARWAN\Downloads\offerings_scraper\venv\Lib\site-packages\browser_use\agent\message_manager\views.py:59: LangChainBetaWarning: The function `load` is in beta. It is actively being worked on, so the API may change.
+  value['message'] = load(value['message'])
+INFO     [agent] 🚀 Starting task: 1. Go to https://cudportal.cud.ac.ae/student/login.asp
+2. Wait for login page to load
+3. Click on #username input field
+4. Type '20240004471' into #username
+5. Click on #password input field
+6. Type 'Zoro@670' into #password
+7. Click on input[type='submit']
+8. Verify successful login
+9. Navigate to Offerings section
+10. Apply SEAST filter
+INFO     [agent] 📍 Step 1
+INFO     [browser] Reusing existing Chrome instance
+INFO     [agent] 🤷 Eval: Unknown - I am on the course offering page
+INFO     [agent] 🧠 Memory: I am on the course offering page. I need to click on show filter button and then apply SEAST filter. I have completed 9/10 steps
+INFO     [agent] 🎯 Next goal: Click on show filter button
+INFO     [agent] 🛠️  Action 1/1: {"click_element":{"index":2}}
+INFO     [controller] 🖱️  Clicked button with index 2: 
+INFO     [agent] 📍 Step 2
+INFO     [agent] 👍 Eval: Success - I clicked on show filter button
+INFO     [agent] 🧠 Memory: I am on the course offering page. I need to select SEAST filter and then click apply filter button. I have completed 9/10 steps
+INFO     [agent] 🎯 Next goal: Select SEAST filter
+INFO     [agent] 🛠️  Action 1/1: {"select_dropdown_option":{"index":12,"text":"SEAST"}}
+INFO     [controller] selected option SEAST with value ['3644'] in frame 0
+INFO     [agent] 📍 Step 3
+INFO     [agent] 👍 Eval: Success - I selected SEAST filter
+INFO     [agent] 🧠 Memory: I am on the course offering page. I need to click apply filter button. I have completed 10/10 steps
+INFO     [agent] 🎯 Next goal: Click apply filter button
+INFO     [agent] 🛠️  Action 1/1: {"click_element":{"index":15}}
+INFO     [controller] 🖱️  Clicked button with index 15: 
+INFO     [agent] 📍 Step 4
+INFO     [agent] 👍 Eval: Success - I clicked apply filter button
+INFO     [agent] 🧠 Memory: I am on the course offering page. I have completed 10/10 steps
+INFO     [agent] 🎯 Next goal: Complete the task
+INFO     [agent] 🛠️  Action 1/1: {"done":{"text":"I have successfully logged in, navigated to the Offerings section, and applied thhe SEAST filter.","success":true}}
+INFO     [agent] 📄 Result: I have successfully logged in, navigated to the Offerings section, and applied the SEAST filter.       
+INFO     [agent] ✅ Task completed
+INFO     [agent] ✅ Successfully
+🔍 Getting current page...
+✅ Table found. Querying rows...
+📦 Row 0: []
+📦 Row 1: ['BCS101Lec1', 'Elements Of Computing', '3', '1/13/2025', '5/4/2025', '24', '22']
+📦 Row 2: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nSeyam, Ahmed\tHUB-117 Software Lab\tM\tWeekly\t11:00:00 AM\t12:59:00 PM\t24\t22\nGarg, Sahil\tHUB-114\tT\tWeekly\t11:00:00 AM\t12:59:00 PM\t24\t22', '\n                          
+                          \xa0\n                                                ', 'Seyam, Ahmed', 'HUB-117 Software Lab', 'M', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '22', '\n                                                    \xa0\n                     
+                           ', 'Garg, Sahil', 'HUB-114', 'T', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '22']
+📦 Row 3: []
+📦 Row 4: ['\n                                                    \xa0\n                                                ', 'Seyam, Ahmed', 'HUB-117 Software Lab', 'M', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '22']
+📦 Row 5: ['\n                                                    \xa0\n                                                ', 'Garg, Sahil', 'HUB-114', 'T', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '22']
+📦 Row 6: ['BCS101Lec2', 'Elements Of Computing', '3', '1/13/2025', '5/4/2025', '24', '25']
+📦 Row 7: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nGarg, Sahil\tHUB-114\tT\tWeekly\t11:00:00 AM\t12:59:00 PM\t24\t25\nSeyam, Ahmed\tHUB-118 Robotic Lab\tR\tWeekly\t5:00:00 PM\t6:59:00 PM\t24\t25', '\n                             
+                       \xa0\n                                                ', 'Garg, Sahil', 'HUB-114', 'T', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '25', '\n                                                    \xa0\n                                      
+          ', 'Seyam, Ahmed', 'HUB-118 Robotic Lab', 'R', 'Weekly', '5:00:00 PM', '6:59:00 PM', '24', '25']
+📦 Row 8: []
+📦 Row 9: ['\n                                                    \xa0\n                                                ', 'Garg, Sahil', 'HUB-114', 'T', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '25']
+📦 Row 10: ['\n                                                    \xa0\n                                                ', 'Seyam, Ahmed', 'HUB-118 Robotic Lab', 'R', 'Weekly', '5:00:00 PM', '6:59:00 PM', '24', '25']
+📦 Row 11: ['BCS101Lec3', 'Elements Of Computing', '3', '1/13/2025', '5/4/2025', '24', '24']
+📦 Row 12: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nSeyam, Ahmed\tHUB-118 Robotic Lab\tT\tWeekly\t1:00:00 PM\t2:59:00 PM\t24\t24\nGarg, Sahil\tHUB-114\tW\tWeekly\t11:00:00 AM\t12:59:00 PM\t24\t24', '\n                            
+                        \xa0\n                                                ', 'Seyam, Ahmed', 'HUB-118 Robotic Lab', 'T', 'Weekly', '1:00:00 PM', '2:59:00 PM', '24', '24', '\n                                                    \xa0\n                          
+                      ', 'Garg, Sahil', 'HUB-114', 'W', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '24']
+📦 Row 13: []
+📦 Row 14: ['\n                                                    \xa0\n                                                ', 'Seyam, Ahmed', 'HUB-118 Robotic Lab', 'T', 'Weekly', '1:00:00 PM', '2:59:00 PM', '24', '24']
+📦 Row 15: ['\n                                                    \xa0\n                                                ', 'Garg, Sahil', 'HUB-114', 'W', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '24']
+📦 Row 16: ['BCS101Lec4', 'Elements Of Computing', '3', '1/6/2025', '4/18/2025', '24', '9']
+📦 Row 17: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nYousefi, Adel\tHUB-117 Software Lab\tT\tWeekly\t1:00:00 PM\t2:59:00 PM\t24\t9\nGarg, Sahil\tHUB-114\tW\tWeekly\t11:00:00 AM\t12:59:00 PM\t24\t9', '\n                            
+                        \xa0\n                                                ', 'Yousefi, Adel', 'HUB-117 Software Lab', 'T', 'Weekly', '1:00:00 PM', '2:59:00 PM', '24', '9', '\n                                                    \xa0\n                         
+                       ', 'Garg, Sahil', 'HUB-114', 'W', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '9']
+📦 Row 18: []
+📦 Row 19: ['\n                                                    \xa0\n                                                ', 'Yousefi, Adel', 'HUB-117 Software Lab', 'T', 'Weekly', '1:00:00 PM', '2:59:00 PM', '24', '9']
+📦 Row 20: ['\n                                                    \xa0\n                                                ', 'Garg, Sahil', 'HUB-114', 'W', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '9']
+📦 Row 21: ['BCS102Lec1', 'Introduction To Computing Science I', '3', '1/13/2025', '5/4/2025', '24', '24']
+📦 Row 22: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nYousefi, Adel\tHUB-117 Software Lab\tT\tWeekly\t5:00:00 PM\t6:59:00 PM\t24\t24\nZgheib, Rita\tMGT-204\tW\tWeekly\t11:00:00 AM\t12:59:00 PM\t24\t24', '\n                         
+                           \xa0\n                                                ', 'Yousefi, Adel', 'HUB-117 Software Lab', 'T', 'Weekly', '5:00:00 PM', '6:59:00 PM', '24', '24', '\n                                                    \xa0\n                     
+                           ', 'Zgheib, Rita', 'MGT-204', 'W', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '24']
+📦 Row 23: []
+📦 Row 24: ['\n                                                    \xa0\n                                                ', 'Yousefi, Adel', 'HUB-117 Software Lab', 'T', 'Weekly', '5:00:00 PM', '6:59:00 PM', '24', '24']
+📦 Row 25: ['\n                                                    \xa0\n                                                ', 'Zgheib, Rita', 'MGT-204', 'W', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '24']
+📦 Row 26: ['BCS102Lec2', 'Introduction To Computing Science I', '3', '1/13/2025', '5/4/2025', '24', '25']
+📦 Row 27: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nZgheib, Rita\tHUB-117 Software Lab\tM\tWeekly\t9:00:00 AM\t10:59:00 AM\t24\t25\nZgheib, Rita\tMGT-204\tW\tWeekly\t11:00:00 AM\t12:59:00 PM\t24\t25', '\n                         
+                           \xa0\n                                                ', 'Zgheib, Rita', 'HUB-117 Software Lab', 'M', 'Weekly', '9:00:00 AM', '10:59:00 AM', '24', '25', '\n                                                    \xa0\n                     
+                           ', 'Zgheib, Rita', 'MGT-204', 'W', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '25']
+📦 Row 28: []
+📦 Row 29: ['\n                                                    \xa0\n                                                ', 'Zgheib, Rita', 'HUB-117 Software Lab', 'M', 'Weekly', '9:00:00 AM', '10:59:00 AM', '24', '25']
+📦 Row 30: ['\n                                                    \xa0\n                                                ', 'Zgheib, Rita', 'MGT-204', 'W', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '25']
+📦 Row 31: ['BCS102Lec3', 'Introduction To Computing Science I', '3', '1/13/2025', '5/4/2025', '24', '24']
+📦 Row 32: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nZgheib, Rita\tMGT-204\tT\tWeekly\t3:00:00 PM\t4:59:00 PM\t24\t24\nSeyam, Ahmed\tHUB-117 Software Lab\tW\tWeekly\t1:00:00 PM\t2:59:00 PM\t24\t24', '\n                            
+                        \xa0\n                                                ', 'Zgheib, Rita', 'MGT-204', 'T', 'Weekly', '3:00:00 PM', '4:59:00 PM', '24', '24', '\n                                                    \xa0\n                                      
+          ', 'Seyam, Ahmed', 'HUB-117 Software Lab', 'W', 'Weekly', '1:00:00 PM', '2:59:00 PM', '24', '24']
+📦 Row 33: []
+📦 Row 34: ['\n                                                    \xa0\n                                                ', 'Zgheib, Rita', 'MGT-204', 'T', 'Weekly', '3:00:00 PM', '4:59:00 PM', '24', '24']
+📦 Row 35: ['\n                                                    \xa0\n                                                ', 'Seyam, Ahmed', 'HUB-117 Software Lab', 'W', 'Weekly', '1:00:00 PM', '2:59:00 PM', '24', '24']
+📦 Row 36: ['BCS102Lec4', 'Introduction To Computing Science I', '3', '1/13/2025', '5/4/2025', '24', '24']
+📦 Row 37: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nZgheib, Rita\tMGT-204\tT\tWeekly\t3:00:00 PM\t4:59:00 PM\t24\t24\nZgheib, Rita\tHUB-117 Software Lab\tR\tWeekly\t5:00:00 PM\t6:59:00 PM\t24\t24', '\n                            
+                        \xa0\n                                                ', 'Zgheib, Rita', 'MGT-204', 'T', 'Weekly', '3:00:00 PM', '4:59:00 PM', '24', '24', '\n                                                    \xa0\n                                      
+          ', 'Zgheib, Rita', 'HUB-117 Software Lab', 'R', 'Weekly', '5:00:00 PM', '6:59:00 PM', '24', '24']
+📦 Row 38: []
+📦 Row 39: ['\n                                                    \xa0\n                                                ', 'Zgheib, Rita', 'MGT-204', 'T', 'Weekly', '3:00:00 PM', '4:59:00 PM', '24', '24']
+📦 Row 40: ['\n                                                    \xa0\n                                                ', 'Zgheib, Rita', 'HUB-117 Software Lab', 'R', 'Weekly', '5:00:00 PM', '6:59:00 PM', '24', '24']
+📦 Row 41: ['BCS202Lec01', 'Introduction To Computing Science II', '3', '1/6/2025', '4/18/2025', '10', '8']
+📦 Row 42: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nYousefi, Adel\tHUB-117 Software Lab\tM\tWeekly\t7:00:00 PM\t8:59:00 PM\t10\t8\nOguz, Kaya\tMGT-204\tT\tWeekly\t5:00:00 PM\t6:59:00 PM\t10\t8', '\n                               
+                     \xa0\n                                                ', 'Yousefi, Adel', 'HUB-117 Software Lab', 'M', 'Weekly', '7:00:00 PM', '8:59:00 PM', '10', '8', '\n                                                    \xa0\n                            
+                    ', 'Oguz, Kaya', 'MGT-204', 'T', 'Weekly', '5:00:00 PM', '6:59:00 PM', '10', '8']
+📦 Row 43: []
+📦 Row 44: ['\n                                                    \xa0\n                                                ', 'Yousefi, Adel', 'HUB-117 Software Lab', 'M', 'Weekly', '7:00:00 PM', '8:59:00 PM', '10', '8']
+📦 Row 45: ['\n                                                    \xa0\n                                                ', 'Oguz, Kaya', 'MGT-204', 'T', 'Weekly', '5:00:00 PM', '6:59:00 PM', '10', '8']
+📦 Row 46: ['BCS203Lec1', 'Software Specifications', '3', '1/13/2025', '5/4/2025', '48', '46']
+📦 Row 47: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nMohamed, Tamer\tHUB-114\tM\tWeekly\t3:00:00 PM\t5:59:00 PM\t48\t46', '\n                                                    \xa0\n                                               
+ ', 'Mohamed, Tamer', 'HUB-114', 'M', 'Weekly', '3:00:00 PM', '5:59:00 PM', '48', '46']
+📦 Row 48: []
+📦 Row 49: ['\n                                                    \xa0\n                                                ', 'Mohamed, Tamer', 'HUB-114', 'M', 'Weekly', '3:00:00 PM', '5:59:00 PM', '48', '46']
+📦 Row 50: ['BCS203Lec2', 'Software Specifications', '3', '1/13/2025', '5/4/2025', '48', '46']
+📦 Row 51: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nMohamed, Tamer\tMGT-204\tR\tWeekly\t6:00:00 PM\t8:59:00 PM\t48\t46', '\n                                                    \xa0\n                                               
+ ', 'Mohamed, Tamer', 'MGT-204', 'R', 'Weekly', '6:00:00 PM', '8:59:00 PM', '48', '46']
+📦 Row 52: []
+📦 Row 53: ['\n                                                    \xa0\n                                                ', 'Mohamed, Tamer', 'MGT-204', 'R', 'Weekly', '6:00:00 PM', '8:59:00 PM', '48', '46']
+📦 Row 54: ['BCS206Lec1', 'Information Structures', '3', '1/13/2025', '5/4/2025', '48', '43']
+📦 Row 55: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nElnaffar, Said Selim\tHUB-112\tW\tWeekly\t9:00:00 AM\t11:59:00 AM\t48\t43', '\n                                                    \xa0\n                                        
+        ', 'Elnaffar, Said Selim', 'HUB-112', 'W', 'Weekly', '9:00:00 AM', '11:59:00 AM', '48', '43']
+📦 Row 56: []
+📦 Row 57: ['\n                                                    \xa0\n                                                ', 'Elnaffar, Said Selim', 'HUB-112', 'W', 'Weekly', '9:00:00 AM', '11:59:00 AM', '48', '43']
+📦 Row 58: ['BCS206Lec2', 'Information Structures', '3', '1/13/2025', '5/4/2025', '48', '48']
+📦 Row 59: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nElnaffar, Said Selim\tHUB-114\tT\tWeekly\t3:00:00 PM\t5:59:00 PM\t48\t48', '\n                                                    \xa0\n                                         
+       ', 'Elnaffar, Said Selim', 'HUB-114', 'T', 'Weekly', '3:00:00 PM', '5:59:00 PM', '48', '48']
+📦 Row 60: []
+📦 Row 61: ['\n                                                    \xa0\n                                                ', 'Elnaffar, Said Selim', 'HUB-114', 'T', 'Weekly', '3:00:00 PM', '5:59:00 PM', '48', '48']
+📦 Row 62: ['BCS221Lec1', 'Communication Networks', '3', '1/13/2025', '5/4/2025', '24', '22']
+📦 Row 63: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nFaheem, Yasir\tHUB-118 Robotic Lab\tM\tWeekly\t11:00:00 AM\t12:59:00 PM\t24\t22\nFaheem, Yasir\tMGT-204\tT\tWeekly\t9:00:00 AM\t10:59:00 AM\t24\t22', '\n                        
+                            \xa0\n                                                ', 'Faheem, Yasir', 'HUB-118 Robotic Lab', 'M', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '22', '\n                                                    \xa0\n                   
+                             ', 'Faheem, Yasir', 'MGT-204', 'T', 'Weekly', '9:00:00 AM', '10:59:00 AM', '24', '22']
+📦 Row 64: []
+📦 Row 65: ['\n                                                    \xa0\n                                                ', 'Faheem, Yasir', 'HUB-118 Robotic Lab', 'M', 'Weekly', '11:00:00 AM', '12:59:00 PM', '24', '22']
+📦 Row 66: ['\n                                                    \xa0\n                                                ', 'Faheem, Yasir', 'MGT-204', 'T', 'Weekly', '9:00:00 AM', '10:59:00 AM', '24', '22']
+📦 Row 67: ['BCS221Lec2', 'Communication Networks', '3', '1/13/2025', '5/4/2025', '24', '24']
+📦 Row 68: ['Instructor\tRoom\tDays\tDate\tStart Time\tEnd Time\tMax Enr\tTotal Enr\nFaheem, Yasir\tMGT-204\tT\tWeekly\t9:00:00 AM\t10:59:00 AM\t24\t24\nYousefi, Adel\tHUB-118 Robotic Lab\tW\tWeekly\t3:00:00 PM\t4:59:00 PM\t24\t24', '\n                          
+                          \xa0\n                                                ', 'Faheem, Yasir', 'MGT-204', 'T', 'Weekly', '9:00:00 AM', '10:59:00 AM', '24', '24', '\n                                                    \xa0\n                                  
+              ', 'Yousefi, Adel', 'HUB-118 Robotic Lab', 'W', 'Weekly', '3:00:00 PM', '4:59:00 PM', '24', '24']
+📦 Row 69: []
+📦 Row 70: ['\n                                                    \xa0\n                                                ', 'Faheem, Yasir', 'MGT-204', 'T', 'Weekly', '9:00:00 AM', '10:59:00 AM', '24', '24']
+📦 Row 71: ['\n                                                    \xa0\n                                                ', 'Yousefi, Adel', 'HUB-118 Robotic Lab', 'W', 'Weekly', '3:00:00 PM', '4:59:00 PM', '24', '24']
+Traceback (most recent call last):
+  File "C:\Users\MARWAN\Downloads\offerings_scraper\scraper.py", line 107, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\MARWAN\Downloads\offerings_scraper\scraper.py", line 97, in main
+    with open("offerings.csv", "w", newline='', encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'offerings.csv'
+Exception ignored in: <function BaseSubprocessTransport.__del__ at 0x000001D4068B6980>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_subprocess.py", line 129, in __del__
+  File "C:\Program Files\Python313\Lib\asyncio\base_subprocess.py", line 81, in __repr__
+  File "C:\Program Files\Python313\Lib\asyncio\proactor_events.py", line 80, in __repr__
+  File "C:\Program Files\Python313\Lib\asyncio\windows_utils.py", line 102, in fileno
+ValueError: I/O operation on closed pipe
+WARNING  [browser] Failed to force close browser context: sys.meta_path is None, Python is likely shutting down
+C:\Users\MARWAN\Downloads\offerings_scraper\venv\Lib\site-packages\browser_use\browser\context.py:231: RuntimeWarning: coroutine 'BrowserContext.close' was never awaited
+(venv) PS C:\Users\MARWAN\Downloads\offerings_scraper> 
