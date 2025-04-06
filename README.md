@@ -48,12 +48,16 @@ Wait 1-2 mins (watch the bot work in Chrome!)
 Done! Filter courses or download CSV.
 
 🔧 Troubleshooting
-Issue	Fix
+
+
 "Invalid login"	Double-check ID/password in .env
+
 Chrome errors	Ensure Chrome is installed at C:\Program Files\Google\Chrome\...
+
 Slow scraping	Don’t touch the automated Chrome window
 
 ⚠️ Note
+
 For personal/educational use only.
 
 Data accuracy depends on the CUD portal.
