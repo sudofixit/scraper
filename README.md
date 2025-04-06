@@ -18,7 +18,7 @@ App Demo
 
 🛠️ Setup (5 Minutes)
 
-git clone https://github.com/your-repo/cud-course-scraper  
+git clone https://github.com/sudofixit/scraper 
 cd cud-course-scraper  
 pip install -r requirements.txt  
 Get a free Google Gemini API Key 
