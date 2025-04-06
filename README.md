@@ -19,14 +19,15 @@ App Demo
 🛠️ Setup (5 Minutes)
 
 git clone https://github.com/sudofixit/scraper 
-cd cud-course-scraper  
+cd scraper 
 pip install -r requirements.txt  
+
 Get a free Google Gemini API Key 
 
 Create .env file in the project folder:
 
-ID = "20240001234"          # Your CUD student ID  
-PASSWORD = "••••••••"       # Portal password  
+ID = "20240001234"          # Auto-updates in the app   
+PASSWORD = "••••••••"       # Auto-updates in the app  
 GEMINI_API_KEY = "AIzaSy..."# Paste Gemini key here  
 TERM = "71"                 # Auto-updates in the app  
 🖥️ How to Run
